@@ -557,7 +557,6 @@ body.dark .tech-tags span{
   .project-img-wrapper img{ height: 200px; }
 }
 
-body.dark .navbar-brand,
 body.dark .navbar-brand:hover {
   color: #ffffff !important;
 }
