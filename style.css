@@ -234,7 +234,7 @@ body.dark #navbar{
 .about-img-wrapper{
   position: relative;
   width: 350px;
-  margin: 1000%;
+  margin: 0 auto;
 }
 
 
