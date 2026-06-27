@@ -18,10 +18,10 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   if (!typingEl) return;
 
   const phrases = [
-    "Web Developer",
-   "Always eager to learn",
-    "Frontend & Backend Learner",
-  ];
+  "Mahasiswa Sistem Informasi",
+  "Web Developer",
+  "Frontend Learner",
+];
 
   let phraseIndex = 0;
   let charIndex = 0;
@@ -152,7 +152,7 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   if (!container) return;
 
   const buttons = $$(".filter-btn", container);
-  const items = $$(".portofolio-item", container);
+  const items = $$(".portfolio-item", container);
   if (!buttons.length || !items.length) return;
 
   function setActive(btn) {
