@@ -6,23 +6,22 @@
   <title>Faturrachman Al Kautsar | Portofolio</title>
   <meta name="description" content="Portfolio Faturrachman Al Kautsar - Mahasiswa Sistem Informasi & Web Developer">
 
-  <!-- Bootstrap CSS -->f
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- AOS Animation -->
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Dark Mode Toggle -->
+
 <div class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
   <i class="fas fa-moon"></i>
 </div>
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
   <div class="container">
     <a class="navbar-brand" href="#home">
@@ -44,7 +43,7 @@
   </div>
 </nav>
 
-<!-- Home Section -->
+
 <section id="home" class="home">
   <div class="particles" id="particles"></div>
   <div class="container text-center">
@@ -79,7 +78,7 @@
   </div>
 </section>
 
-<!-- About Section -->
+
 <section id="about" class="section">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -142,7 +141,7 @@
   </div>
 </section>
 
-<!-- Skills Section -->
+
 <section id="skills" class="section bg-light">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -241,7 +240,7 @@
       </div>
     </div>
     
-    <!-- Skill Cards -->
+  
     <div class="row mt-5">
       <div class="col-md-3 col-6 mb-3" data-aos="zoom-in" data-aos-delay="0">
         <div class="skill-card">
@@ -271,7 +270,7 @@
   </div>
 </section>
 
-<!-- Portfolio Section -->
+
 <section id="portfolio" class="section">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
@@ -280,7 +279,7 @@
       <div class="section-line"></div>
     </div>
     
-    <!-- Filter Buttons -->
+
     <div class="portfolio-filter" data-aos="fade-up">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="web">Web</button>
@@ -357,7 +356,7 @@
       <div class="col-md-6 mb-4 portfolio-item" data-category="app" data-aos="fade-up" data-aos-delay="300">
         <div class="card project-card">
           <div class="project-img-wrapper">
-            <img src="foto-profile.png" class="card-img-top" alt="Project 4">
+            <img src="portolio-web.JPG" class="card-img-top" alt="Project 4">
             <div class="project-overlay">
               <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
               <a href="#" class="project-link"><i class="fab fa-github"></i></a>
