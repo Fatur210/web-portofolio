@@ -152,7 +152,7 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   if (!container) return;
 
   const buttons = $$(".filter-btn", container);
-  const items = $$(".portfolio-item", container);
+  const items = $$(".portofolio-item", container);
   if (!buttons.length || !items.length) return;
 
   function setActive(btn) {
