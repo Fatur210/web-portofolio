@@ -557,29 +557,40 @@ body.dark .tech-tags span{
   .project-img-wrapper img{ height: 200px; }
 }
 
-body.dark .project-card {
-  background: #111827;
-  border: 1px solid #374151;
-  color: #ffffff;
+body.dark .project-card,
+body.dark-mode .project-card,
+.dark-mode .project-card {
+  background: #111827 !important;
+  border-color: #374151 !important;
 }
 
-body.dark .project-card .card-body {
-  background: #111827;
+body.dark .project-card *,
+body.dark-mode .project-card *,
+.dark-mode .project-card * {
+  color: #ffffff !important;
 }
 
-body.dark .project-card .card-title {
-  color: #ffffff;
+body.dark .project-card .card-text,
+body.dark-mode .project-card .card-text,
+.dark-mode .project-card .card-text {
+  color: #e5e7eb !important;
 }
 
-body.dark .project-card .card-text {
-  color: #d1d5db;
+body.dark .project-tag,
+body.dark-mode .project-tag,
+.dark-mode .project-tag {
+  color: #60a5fa !important;
 }
 
-body.dark .project-card .project-tag {
-  color: #60a5fa;
+body.dark .project-tech span,
+body.dark-mode .project-tech span,
+.dark-mode .project-tech span {
+  background: #1e3a8a !important;
+  color: #ffffff !important;
 }
 
-body.dark .project-tech span {
-  background: #1e3a8a;
-  color: #ffffff;
+body.dark .project-img-wrapper,
+body.dark-mode .project-img-wrapper,
+.dark-mode .project-img-wrapper {
+  background: #1f2937 !important;
 }
