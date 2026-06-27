@@ -249,9 +249,9 @@ body.dark #navbar{
 
 .about-badge{
   position: absolute;
-  top: 25px;
-  left: -20px;
-  background: rgba(255,255,255,.9);
+  top: 20px;
+  left: 20px;
+  background: rgba(255,255,255,.95);
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 10px 16px;
