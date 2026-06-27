@@ -1,7 +1,3 @@
-/* =========================
-   Portfolio - Base Styles
-   ========================= */
-
 :root{
   --bg: #ffffff;
   --text: #0f172a;
@@ -36,9 +32,6 @@ body.dark{
   --shadow-soft: 0 4px 14px rgba(0,0,0,.35);
 }
 
-/* =========================
-   Navbar & Floating UI
-   ========================= */
 #navbar{
   background: rgba(255,255,255,.7);
   backdrop-filter: blur(10px);
@@ -74,7 +67,6 @@ body.dark #navbar{
   color: var(--text);
 }
 
-/* Back to top */
 .back-to-top{
   position: fixed;
   right: 22px;
@@ -101,9 +93,6 @@ body.dark #navbar{
   transform: translateY(0);
 }
 
-/* =========================
-   Sections
-   ========================= */
 .section{
   padding: 80px 0;
 }
@@ -118,7 +107,6 @@ body.dark #navbar{
   position: relative;
 }
 
-/* Soft overlay to improve contrast */
 .home::before{
   content:"";
   position:absolute;
@@ -134,9 +122,6 @@ body.dark #navbar{
   z-index: 1;
 }
 
-/* =========================
-   Particles placeholder
-   ========================= */
 .particles{
   position: absolute;
   inset: 0;
@@ -144,9 +129,6 @@ body.dark #navbar{
   opacity: .35;
 }
 
-/* =========================
-   Profile / ring
-   ========================= */
 .profile-wrapper{
   display: inline-block;
 }
@@ -180,9 +162,6 @@ body.dark #navbar{
   to{ transform: rotate(360deg); }
 }
 
-/* =========================
-   Typing effect
-   ========================= */
 .typing-text{
   font-size: 1.15rem;
   font-weight: 600;
@@ -209,7 +188,6 @@ body.dark #navbar{
   color: #fff;
 }
 
-/* Social buttons */
 .social-links{
   display:flex;
   justify-content:center;
@@ -235,9 +213,6 @@ body.dark #navbar{
   background: rgba(255,255,255,.22);
 }
 
-/* =========================
-   Section header
-   ========================= */
 .section-header .section-tag{
   display: inline-block;
   padding: 6px 12px;
@@ -256,9 +231,6 @@ body.dark #navbar{
   border-radius: 99px;
 }
 
-/* =========================
-   About image badges
-   ========================= */
 .about-img-wrapper{
   position: relative;
   width: 100%;
@@ -293,9 +265,6 @@ body.dark .about-badge{
   background: rgba(17,24,39,.75);
 }
 
-/* =========================
-   Skills
-   ========================= */
 .bg-light{
   background-color: rgba(13,110,253,.05) !important;
 }
@@ -335,7 +304,6 @@ body.dark .progress{
   transition: width 1.2s ease;
 }
 
-/* Skill cards row */
 .skill-card{
   background: var(--card);
   border: 1px solid var(--border);
@@ -364,9 +332,6 @@ body.dark .progress{
   font-weight: 800;
 }
 
-/* =========================
-   Cards / projects
-   ========================= */
 .project-card{
   border-radius: var(--radius);
   border: 1px solid var(--border);
@@ -398,7 +363,6 @@ body.dark .progress{
   transform: scale(1.08);
 }
 
-/* Overlay */
 .project-overlay{
   position: absolute;
   inset: 0;
@@ -433,7 +397,6 @@ body.dark .progress{
   background: rgba(255,255,255,.28);
 }
 
-/* Filter buttons */
 .portfolio-filter{
   display:flex;
   flex-wrap: wrap;
@@ -463,7 +426,6 @@ body.dark .progress{
   border-color: transparent;
 }
 
-/* portfolio item hide/show */
 .portfolio-item{
   transition: opacity .2s ease, transform .2s ease;
 }
@@ -474,9 +436,6 @@ body.dark .progress{
   pointer-events: none;
 }
 
-/* =========================
-   Contact
-   ========================= */
 .contact-info{
   padding: 18px 12px;
 }
@@ -590,13 +549,127 @@ body.dark .tech-tags span{
   background: rgba(17,24,39,.55);
 }
 
-/* =========================
-   Responsive
-   ========================= */
 @media (max-width: 768px){
   .home h1{ font-size: 28px; }
   .home p{ font-size: 16px; }
   .dark-mode-toggle{ top: 86px; right: 14px; }
   .back-to-top{ right: 14px; bottom: 14px; }
   .project-img-wrapper img{ height: 200px; }
+}
+
+body.dark .navbar-brand,
+body.dark .navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+body.dark .navbar-nav .nav-link {
+  color: #e5e7eb !important;
+}
+
+body.dark .navbar-nav .nav-link:hover,
+body.dark .navbar-nav .nav-link.active {
+  color: #60a5fa !important;
+}
+
+body.dark .project-card {
+  background: #111827;
+  border: 1px solid #374151;
+  color: #ffffff;
+}
+
+body.dark .project-card .card-body {
+  background: #111827;
+}
+
+body.dark .project-card .card-title {
+  color: #ffffff;
+}
+
+body.dark .project-card .card-text {
+  color: #d1d5db;
+}
+
+body.dark .project-card .project-tag {
+  color: #60a5fa;
+}
+
+body.dark .project-tech span {
+  background: #1e3a8a;
+  color: #ffffff;
+}
+
+body.dark .portfolio-item {
+  color: #ffffff;
+}
+
+body.dark #portfolio {
+  background: #0b1220;
+}
+
+body.dark .section-header h2 {
+  color: #ffffff;
+}
+
+body.dark .section-header .section-tag {
+  color: #d1d5db;
+  border-color: #374151;
+}
+
+body.dark .portfolio-filter .filter-btn {
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+body.dark .portfolio-filter .filter-btn.active,
+body.dark .portfolio-filter .filter-btn:hover {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+body.dark .project-img-wrapper {
+  background: #1f2937;
+}
+
+body.dark .skill-item {
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+body.dark .skill-info {
+  color: #ffffff;
+}
+
+body.dark .skill-card {
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+body.dark .contact-form-wrapper {
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+body.dark .form-label {
+  color: #ffffff;
+}
+
+body.dark .form-control {
+  background: #0b1220;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+body.dark .form-control::placeholder {
+  color: #9ca3af;
+}
+
+body.dark .input-group-text {
+  background: #1f2937;
+  color: #ffffff;
+  border: 1px solid #374151;
 }
