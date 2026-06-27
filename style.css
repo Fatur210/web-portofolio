@@ -557,19 +557,6 @@ body.dark .tech-tags span{
   .project-img-wrapper img{ height: 200px; }
 }
 
-body.dark .navbar-brand:hover {
-  color: #ffffff !important;
-}
-
-body.dark .navbar-nav .nav-link {
-  color: #e5e7eb !important;
-}
-
-body.dark .navbar-nav .nav-link:hover,
-body.dark .navbar-nav .nav-link.active {
-  color: #60a5fa !important;
-}
-
 body.dark .project-card {
   background: #111827;
   border: 1px solid #374151;
@@ -595,80 +582,4 @@ body.dark .project-card .project-tag {
 body.dark .project-tech span {
   background: #1e3a8a;
   color: #ffffff;
-}
-
-body.dark .portfolio-item {
-  color: #ffffff;
-}
-
-body.dark #portfolio {
-  background: #0b1220;
-}
-
-body.dark .section-header h2 {
-  color: #ffffff;
-}
-
-body.dark .section-header .section-tag {
-  color: #d1d5db;
-  border-color: #374151;
-}
-
-body.dark .portfolio-filter .filter-btn {
-  background: #111827;
-  color: #ffffff;
-  border: 1px solid #374151;
-}
-
-body.dark .portfolio-filter .filter-btn.active,
-body.dark .portfolio-filter .filter-btn:hover {
-  background: linear-gradient(to right, #3b82f6, #60a5fa);
-  color: #ffffff;
-  border-color: transparent;
-}
-
-body.dark .project-img-wrapper {
-  background: #1f2937;
-}
-
-body.dark .skill-item {
-  background: #111827;
-  color: #ffffff;
-  border: 1px solid #374151;
-}
-
-body.dark .skill-info {
-  color: #ffffff;
-}
-
-body.dark .skill-card {
-  background: #111827;
-  color: #ffffff;
-  border: 1px solid #374151;
-}
-
-body.dark .contact-form-wrapper {
-  background: #111827;
-  color: #ffffff;
-  border: 1px solid #374151;
-}
-
-body.dark .form-label {
-  color: #ffffff;
-}
-
-body.dark .form-control {
-  background: #0b1220;
-  color: #ffffff;
-  border: 1px solid #374151;
-}
-
-body.dark .form-control::placeholder {
-  color: #9ca3af;
-}
-
-body.dark .input-group-text {
-  background: #1f2937;
-  color: #ffffff;
-  border: 1px solid #374151;
 }
