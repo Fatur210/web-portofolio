@@ -233,26 +233,14 @@ body.dark #navbar{
 
 .about-img-wrapper{
   position: relative;
-  width: 350px;
+  width: fit-content;
   margin: 0 auto;
-}
-
-
-.about-img {
-  width: 350px;
-  height: 430px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.about-img-wrapper {
-  text-align: center;
 }
 
 .about-badge{
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: -115px;
   background: rgba(255,255,255,.95);
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -262,15 +250,16 @@ body.dark #navbar{
   gap: 10px;
   font-weight: 700;
   box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  white-space: nowrap;
 }
 
-body.dark .about-badge{
-  background: rgba(17,24,39,.75);
+.about-img {
+  width: 350px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-.bg-light{
-  background-color: rgba(13,110,253,.05) !important;
-}
 
 .skill-item{
   background: var(--card);
