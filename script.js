@@ -1,12 +1,6 @@
-/* =========================
-   Portfolio - Script Enhancements
-   ========================= */
-
-// DOM helpers
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-/* ---------- AOS init ---------- */
 (function initAOS() {
   try {
     if (window.AOS && typeof window.AOS.init === "function") {
@@ -16,43 +10,16 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
       });
     }
   } catch (e) {
-    // ignore
   }
 })();
 
-/* ---------- Dark mode ---------- */
-(function initDarkMode() {
-  const toggle = $("#darkModeToggle");
-  const body = document.body;
-
-  // restore preference
-  try {
-    const saved = localStorage.getItem("theme");
-    if (saved === "dark") body.classList.add("dark");
-  } catch (e) {
-    // ignore
-  }
-
-  if (!toggle) return;
-
-  toggle.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    try {
-      localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
-    } catch (e) {
-      // ignore
-    }
-  });
-})();
-
-/* ---------- Typing effect ---------- */
 (function initTyping() {
   const typingEl = $("#typing");
   if (!typingEl) return;
 
   const phrases = [
     "Web Developer",
-    "UI/UX Enthusiast",
+   "Always eager to learn",
     "Frontend & Backend Learner",
   ];
 
@@ -93,7 +60,6 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   setTimeout(tick, 450);
 })();
 
-/* ---------- Back to top ---------- */
 (function initBackToTop() {
   const btn = $("#backToTop");
   if (!btn) return;
@@ -112,7 +78,6 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   });
 })();
 
-/* ---------- Skills progress bar animation ---------- */
 (function initSkillProgress() {
   const bars = $$(".progress-bar");
   if (!bars.length) return;
@@ -138,12 +103,10 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
     { threshold: 0.25 }
   );
 
-  // Observe first section to avoid multiple triggers
   const skillsSection = $("#skills");
   if (skillsSection) observer.observe(skillsSection);
 })();
 
-/* ---------- Counter animation ---------- */
 (function initCounters() {
   const counters = $$(".stat-number");
   if (!counters.length) return;
@@ -184,7 +147,6 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   if (aboutSection) observer.observe(aboutSection);
 })();
 
-/* ---------- Portfolio filtering ---------- */
 (function initPortfolioFilter() {
   const container = $("#portfolio");
   if (!container) return;
@@ -216,7 +178,6 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   });
 })();
 
-/* ---------- Contact form validation (existing) ---------- */
 (function initContactForm() {
   const form = $("#contactForm");
   if (!form) return;
